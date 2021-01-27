@@ -13,7 +13,7 @@ from ecapture import ecapture as ec #pip install ecapture
 import wolframalpha #pip install wolframalpha
 #pip install pyAudio
 
-app_id = "V6YTW4-6XXYRW8VUK"
+app_id = "Your_App_Id"
 client = wolframalpha.Client(app_id)
 
 engine = pyttsx3.init('sapi5')
@@ -83,8 +83,8 @@ def sendEmail(to, content):
     server.starttls() 
       
     # Enable low security in gmail 
-    server.login('aniketdewnani31@gmail.com', 'Omsairam3110#') 
-    server.sendmail('aniketdewnani31@gmail.com', to, content) 
+    server.login('YourGmailId@gmail.com', 'Your_password') 
+    server.sendmail('YourGmailId@gmail.com', to, content) 
     server.close() 
 
 def takeCommand():
